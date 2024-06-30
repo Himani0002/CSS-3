@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+    <title>Box</title>
+    <style>
+        body {
+            margin: 20px;
+        }
+
+        #box_1 {
+            border: 10px rgb(0, 0, 0) solid;
+            width: 900px;
+            height: 400px;
+            padding: 60px;
+            margin: auto;
+            box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+            background-color: rgb(50, 50, 50);
+            content:none;
+        }
+
+        #box_2 {
+            border: 10px rgb(0, 0, 0) solid;
+            width: 900px;
+            height: 250px;
+            margin: auto;
+            border: 1px solid rgb(255, 255, 255);
+            box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+            background: linear-gradient(to bottom, #ddd6f3 0%, #ffc2bf 100%);
+        }
+
+        #box_3 {
+            border: 10px rgb(0, 0, 0) solid;
+            width: 800px;
+            height: 210px;
+            padding: 20px;
+            margin: auto;
+            border: 1px solid rgb(255, 255, 255);
+            box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+            background-color: #ddd6f3;
+
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 70px;
+            font-family: 'Satisfy', cursive;
+
+        }
+
+        img {
+            height: 200px;
+            width: 140px;
+            /* padding-left: 50px; */
+        }
+
+        #box_4 {
+            border: none;
+            width: 140px;
+            height: 190px;
+            padding: 15px;
+            padding-bottom: 30px;
+            box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-gap: 40px;
+        }
+        
+    </style>
+</head>
+
+<body>
+
+        <div id="box_1">
+            <div id="box_2">
+                <h1>Welcome</h1>
+                <div id="box_3" class="container">
+
+                    <div id="box_4">
+                        <img src="https://img.freepik.com/free-photo/digital-art-selected_1340-37560.jpg?w=740&t=st=1684752051~exp=1684752651~hmac=dad657b19ddf7a8a6523a384fbb41f42433ec482bc9a4465e0dbeb26ab9d6078">
+                    </div>
+                    <div id="box_4">
+                        <img src="https://img.freepik.com/premium-photo/cute-ai-generated-cartoon-bunny_23-2150288888.jpg">
+                    </div>
+                    <div id="box_4">
+                        <img src="https://img.freepik.com/premium-photo/adorable-baby-duck-character-design-sunflower-field-cute-duck-cartoon-animation_692702-3587.jpg">
+                    </div>
+                    <div id="box_4">
+                        <img src="https://static.vecteezy.com/system/resources/previews/002/954/957/non_2x/cute-and-funny-small-avocado-cartoon-illustration-vector.jpg">
+                    </div>
+
+                </div>
+            </div>
+       
+</body>
+</html>

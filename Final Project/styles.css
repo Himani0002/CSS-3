@@ -1,0 +1,165 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  background-color: rgba(0, 0, 0, 0.987);
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+
+#main {
+  padding: 30px 40px;
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  box-sizing: border-box;
+  background-size: 1330px;
+  background-position: right bottom;
+  background-repeat: no-repeat;
+  background-color: rgba(0, 0, 0, 0.987);
+}
+
+
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 2px;
+  font-family: calibri;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 10px 50px;
+  background-color: #292929f5;
+  box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.05);
+}
+
+
+.menu {
+  display: flex;
+}
+
+.menu li a {
+  padding: 10px 15px;
+  color: #6c707c;
+  font-size: 12px;
+
+}
+
+
+.logo {
+  font-size: 25px;
+  display: flex;
+  font-weight: bold;
+  color: aliceblue;
+  font-family: Poppins;
+}
+
+.toggle {
+  display: none;
+}
+
+
+.active a,
+.menu li a:hover {
+  color: #ff74ba !important;
+  font-weight: bold;
+  transition: all ease 0.4s;
+}
+
+img {
+  float: left !important;
+  width: 380px;
+  margin-right: 210px;
+  opacity: 0.7;
+}
+
+.name {
+  font-family: calibri;
+  height: 400px;
+  width: 1000px;
+  position: absolute;
+  left: 20%;
+  top: 50%;
+  transform: translate(-35%, -60%);
+}
+
+.name p:nth-child(1),
+.name .details {
+  color: #a6adc5;
+  font-size: 16px;
+}
+
+.name h1 {
+  font-family: Poppins;
+  font-size: 40px;
+  margin-top: 150px;
+  letter-spacing: 3px;
+  color: aliceblue;
+}
+
+.cv-btn {
+  width: 200px;
+  height: 45px;
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #292929;
+  color: #FFFFFF;
+}
+
+.cv-btn:hover {
+  background-color: #131313;
+  transition: all ease 0.5s;
+}
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;  
+  background-color: #292929f5;
+  color: white;
+  text-align: center;
+}
+
+/* external css: flickity.css */
+
+* { box-sizing: border-box; }
+
+body { font-family: sans-serif; }
+
+.carousel {
+  background: #EEE;
+}
+
+.carousel-cell {
+  width: 66%;
+  height: 200px;
+  margin-right: 10px;
+  background: #8C8;
+  border-radius: 5px;
+  counter-increment: gallery-cell;
+}
+
+/* cell number */
+.carousel-cell:before {
+  display: block;
+  text-align: center;
+  content: counter(gallery-cell);
+  line-height: 200px;
+  font-size: 80px;
+  color: white;
+}

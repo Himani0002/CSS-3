@@ -1,0 +1,45 @@
+h1 {
+    color: green;
+    text-align: center;
+}
+
+.box2 {
+    position: relative;
+    top: -60px;
+    left: 35px;
+    z-index: 1;
+    background-color: yellow;
+    width: 400px;
+    height: 200px;
+}
+
+.box3 {
+    position: relative;
+    top: -220px;
+    left: 120px;
+    z-index: 3;
+    background-color: green;
+    width: 400px;
+    height: 200px;
+}
+
+.box4 {
+    position: relative;
+    top: -320px;
+    left: 220px;
+    z-index: 4;
+    background-color: orange;
+    width: 400px;
+    height: 200px;
+}
+
+.box5 {
+    position: relative;
+    top: -420px;
+    left: 320px;
+    z-index: 5;
+    background-color: olive;
+    width: 400px;
+    height: 200px;
+    width: 400px;
+}
