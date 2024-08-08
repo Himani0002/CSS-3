@@ -1,0 +1,33 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+ul li {
+  background-color: black;
+  list-style: none;
+  color: aliceblue;
+  display: inline;
+  margin: 100px;
+  padding: 50px;
+}
+
+ul li:nth-child(2) {
+  background-color: aquamarine;
+  color: black;
+}
+
+ul li:nth-child(2) {
+  color: yellowgreen;
+  background-color: purple;
+}
+
+ul li:nth-child(3) {
+  color: blueviolet;
+  background-color: aqua;
+}
+
+ul li:nth-child(4) {
+  color: violet;
+  background-color: yellow;
+}
