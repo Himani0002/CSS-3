@@ -1,0 +1,18 @@
+.logo img {
+  width: 140px;
+}
+
+
+nav {
+  display: flex;
+  justify-content: space-around;
+}
+
+ul li {
+  list-style: none;
+}
+
+ul {
+  gap: 20px;
+  display: flex;
+}
