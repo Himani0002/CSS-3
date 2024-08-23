@@ -1,0 +1,48 @@
+* {
+  color: azure;
+}
+
+.main {
+  height: 540px;
+  width: 1000px;
+  background-color: black;
+  color: azure;
+}
+
+.row1c1 {
+  height: 40px;
+  width: 200px;
+  background-color: blue;
+  float: left;
+}
+
+.laft {
+  width: 250px;
+  height: 200px;
+  background-color: cadetblue;
+  float: left;
+}
+
+.rigth {
+  width: 750px;
+  height: 200px;
+  background-color: darkmagenta;
+  float: left;
+}
+
+.row1c2 {
+  height: 40px;
+  background-color: antiquewhite;
+  color: black;
+}
+
+.rigth img {
+  width: 750px;
+  height: 200px;
+}
+
+.row3co1 img {
+  width: 333.3px;
+  float: left;
+
+}
