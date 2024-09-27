@@ -1,0 +1,87 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Gilroy', sans-serif;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+#main {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+#top {
+  width: 100%;
+  height: 60%;
+  background-image: url("photo-1727187270576-99622a7af2a7.avif");
+  background-size: cover;
+  background-position: 50% 60%;
+  position: relative;
+}
+
+#bottom {
+  display: flex;
+  width: 100%;
+  height: 40%;
+  background-color: blue;
+}
+
+#bone {
+  width: 25%;
+  height: 100%;
+  background-color: green;
+}
+
+#btow {
+  width: 25%;
+  height: 100%;
+  background-color: rgb(234, 255, 6);
+}
+
+#bthree {
+  width: 25%;
+  height: 100%;
+  background-color: rebeccapurple;
+}
+
+#bfour {
+  width: 25%;
+  height: 100%;
+  background-color: pink;
+}
+
+#overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.195);
+}
+
+#text h1 {
+  font-size: 10vw;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+#text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+}
