@@ -1,0 +1,142 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Georgia, serif;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  background-color: #f0f0f0;
+  font-family: 'Segoe UI';
+}
+
+#main {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  background-color: red;
+}
+
+#left {
+  width: 40%;
+  height: 100%;
+  background-color: rgb(255, 255, 255);
+  position: relative;
+}
+
+#right {
+  width: 60%;
+  height: 100%;
+  background-color: rgb(255, 255, 255);
+}
+
+#rtop {
+  display: flex;
+  width: 100%;
+  height: 50%;
+  background-color: rgb(245, 29, 231);
+}
+
+#rbottom {
+  width: 100%;
+  height: 50%;
+  background-image: url("photo-1727336885161-cfd96a134c85.avif");
+  background-size: cover;
+  background-position: center;
+}
+
+
+#rtopleft {
+  width: 55%;
+  height: 100%;
+  background-image: url("premium_photo-1664354821299-a87c1cd0d211.avif");
+  background-size: cover;
+  background-position: center;
+}
+
+#rtopright {
+  width: 45%;
+  height: 100%;
+  background-image: url("photo-1727087312697-13997c39c49c.avif");
+  background-size: cover;
+  background-position: center;
+}
+
+#lnav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 30px;
+}
+
+#lnav h4 {
+  text-transform: uppercase;
+}
+
+#lnavr a {
+  margin-right: 20px;
+  text-decoration: none;
+  color: #000;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+#lnavr {
+  display: flex;
+  align-items: center;
+}
+
+#lnavr i {
+  color: royalblue;
+}
+
+#left #textcenter {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#textcenter h1 {
+  font-size: 90px;
+  font-weight: 600;
+
+}
+
+#textcenter a {
+  text-decoration: none;
+  color: #000;
+  font-weight: 600;
+  font-size: 18px;
+  border-bottom: 1px solid #000;
+  padding-bottom: 5px;
+  font-size: 14px;
+  font-weight: 500;
+  opacity: 0.6;
+}
+
+#textcenter p {
+  opacity: 0.6;
+  font-size: 12px;
+  line-height: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 500px) {
+  #main {
+    flex-direction: column;
+  }
+
+  #left {
+    width: 100%;
+    height: 100%;
+  }
+
+  #right {
+    width: 100%;
+  }
+}
