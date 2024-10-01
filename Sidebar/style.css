@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Afacad Flux", sans-serif;
+}
+
+.main_box {
+  background-image: url("https://images.unsplash.com/photo-1727684812941-0c8c1e4b3395?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  height: 100vh;
+  background-size: cover;
+
+}
+
+.btn_one {
+  line-height: 40px;
+  font-size: 20px;
+  position: absolute;
+  left: 16px;
+  font-weight: 800;
+}
+
+.btn_one:hover {
+  transition: all 0.1s linear;
+  font-size: 22px;
+
+}
+
+.btn_two {
+  font-size: 20px;
+  position: absolute;
+  top: 0;
+  left: 270px;
+}
+
+.btn_two:hover {
+  font-size: 22px;
+  transition: all 0.1s linear;
+
+}
+
+.sidebar_menu .logo a {
+  position: absolute;
+  left: 100px;
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+}
+
+
+.sidebar_menu {
+  background-color: rgba(0, 0, 0, 0.256);
+  position: absolute;
+  top: 10px;
+  width: 300px;
+  box-shadow: 0 0 2px #fff;
+  margin: -8px;
+  height: 100vh;
+  left: -300px;
+  transition: all 0.4s linear;
+}
+
+#check {
+  display: none;
+}
+
+.menu {
+  margin-top: 60px;
+}
+
+.menu li a {
+  padding: 10px;
+  color: #fff;
+  text-decoration: none;
+
+}
+
+.social_media a {
+  opacity: 0.5;
+  color: #fff;
+  position: relative;
+  left: 100px;
+  bottom: -390px;
+  letter-spacing: 9px;
+}
+
+.menu i {
+  color: #fff;
+  padding: 9px;
+  margin-left: 20px;
+}
+
+#check:checked~.sidebar_menu {
+  left: 0;
+}
