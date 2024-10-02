@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url("http://res.cloudinary.com/cyrilg/image/upload/v1500226721/header-bg_pyddzq.jpg");
+  background-size: cover;
+  color: aliceblue;
+  font-family: "Montserrat", sans-serif;
+  min-height: 100vh;
+}
+
+/* General Text Styling */
+h1,
+h2,
+.code,
+.name {
+  text-align: center;
+  color: #00ff6c;
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+}
+
+/* h1 styling */
+h1 {
+  font-size: 30px;
+  font-weight: 900;
+  margin-bottom: 20px;
+}
+
+/* h2 styling */
+h2 {
+  font-size: 24px;
+  padding: 9px;
+  font-weight: 400;
+}
+
+/* code class styling */
+.code {
+  border-bottom: 4px solid #00ff6c;
+  font-size: 20px;
+  padding-bottom: 5px;
+  margin-bottom: 20px;
+}
+
+/* name class styling */
+.name {
+  font-weight: 100;
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+/* Navigation styling */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* Center items vertically */
+  padding: 10px 20px;
+  background-color: rgba(0, 0, 0, 0.5);
+  /* Slightly transparent black background */
+  position: fixed;
+  /* Make the nav fixed at the top */
+  width: 100%;
+  /* Make the nav span across the whole width */
+  top: 0;
+  z-index: 1000;
+  /* Ensure it's above other elements */
+}
+
+/* Additional styles for navigation links */
+nav a {
+  color: aliceblue;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+  margin-left: 20px;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #00ff6c;
+}
+
+
+/* Main container styling */
+.container {
+  height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+/* Button style */
+button {
+  background-color: transparent;
+  border: 2px solid #00ff6c;
+  color: #00ff6c;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  text-transform: uppercase;
+  font-family: "Montserrat", sans-serif;
+}
+
+/* Center button using flexbox */
+.button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+button:hover {
+  background-color: #00ff6c;
+  color: #fff;
+}

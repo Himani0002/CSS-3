@@ -1,0 +1,54 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  background-color: hsl(346deg 17% 70%);
+
+}
+
+.box {
+  position: fixed;
+  bottom: 10px;
+  border: 2px solid;
+  padding: 10px 100px 10px 180px;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+
+hr {
+  margin: 20px;
+}
+
+
+sup {
+  font-size: 10PX;
+}
+
+.end {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+div {
+  padding-left: 90px;
+  line-height: 30px;
+
+}
+
+i {
+  padding: 10px;
+}

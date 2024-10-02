@@ -1,43 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&display=swap');
+
 * {
-  text-align: center;
-  background-color: black;
-  color: whitesmoke;
+  margin: 0;
+  padding: 0;
+  font-family: "Afacad Flux", sans-serif;
 }
 
-span {
-  color: greenyellow;
+.main_box {
+  background-image: url("photo.jpg");
+  height: 100vh;
+  background-size: cover;
 }
 
-h2 i {
-  color: hotpink;
+.btn_one {
+  color: white;
+  font-size: 30px;
+  font-weight: 700;
+  position: absolute;
+  left: 16px;
+  line-height: 60px;
+  cursor: pointer;
+  transition: all 0.3s linear;
+
 }
 
-#pets {
-  display: flex;
-  justify-content: space-evenly;
-  gap: 20px;
+.sidebar_menu {
+  position: fixed;
+  height: 100vh;
+  width: 330px;
+  left: -350px;
+  /* Hidden initially */
+  background-color: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 0 6px rgba(255, 255, 255, 0.5);
+  transition: all 0.3s linear;
 }
 
-.card {
-  border: 2px solid rgb(17, 255, 0);
-  width: 400px;
-  border-radius: 30px;
-  text-align: center;
-  padding: 20px;
+.sidebar_menu .logo {
+  position: absolute;
+  width: 100%;
+  line-height: 60px;
+  box-shadow: 0 0 6px rgba(255, 255, 255, 0.4);
 }
 
-img {
-  width: 400px;
-  border-radius: 30px;
-  height: 250px;
+.sidebar_menu .logo a {
+  position: absolute;
+  left: 60px;
+  color: white;
+  text-decoration: none;
+  font-size: 40px;
+  font-weight: 800;
 }
 
-h4 {
-  color: rgb(17, 255, 0);
+.sidebar_menu .menu {
+  position: absolute;
+  width: 100%;
+  top: 80px;
 }
 
-@media screen and (max-width: 768px) {
-  #pets {
-    flex-wrap: wrap;
-  }
+.sidebar_menu .btn_two i {
+  font-size: 30px;
+  line-height: 60px;
+  position: absolute;
+  left: 295px;
+  /* opacity: 0; */
+  cursor: pointer;
+}
+
+.sidebar_menu .menu li {
+  margin-top: 6px;
+  padding: 14px 20px;
+}
+
+.sidebar_menu .menu i,
+a {
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.sidebar_menu .menu i {
+  padding-right: 10px;
+}
+
+.sidebar_menu .social_media {
+  position: absolute;
+  left: 25%;
+  bottom: 50px;
+}
+
+.sidebar_menu .social_media i {
+  color: white;
+  opacity: 0.5;
+  padding: 0 5px;
+}
+
+#check {
+  display: none;
+}
+
+.sidebar_menu .menu li:hover {
+  box-shadow: 0 0 4px rgba(225, 225, 255, 0.5);
+  transition: box-shadow 0.3s ease;
+}
+
+.sidebar_menu .social_media i:hover {
+  opacity: 1;
+  transform: scale(1.1);
+  transition: opacity 0.3s, transform 0.3s ease;
+}
+
+/* Fixed the typo */
+#check:checked~.sidebar_menu {
+
+  left: 0;
+  /* Sidebar slides in */
+}
+
+#check:checked~.btn_one i {
+  opacity: 0;
 }
