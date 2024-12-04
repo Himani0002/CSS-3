@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Edu AU VIC WA NT Hand", cursive;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 110vh;
+  background: #000;
+  /* Un-comment this to set a black background */
+}
+
+.content {
+  position: relative;
+}
+
+.content h2 {
+  position: absolute;
+  color: #fff;
+  transform: translate(-50%, -50%);
+  font-size: 8em;
+}
+
+.content h2:nth-child(1) {
+  color: transparent;
+  -webkit-text-stroke: 2px #03a9f4;
+}
+
+.content h2:nth-child(2) {
+  color: #03a9f4;
+  animation: animate 4s ease-in-out infinite;
+}
+
+@keyframes animate {
+
+  0%,
+  100% {
+    clip-path: polygon(0 98%, 0 53%, 14% 61%, 36% 50%, 54% 64%, 69% 65%, 82% 58%, 89% 54%, 99% 48%, 99% 48%, 97% 49%, 98% 98%);
+  }
+
+  50% {
+    clip-path: polygon(0 98%, 0 53%, 14% 61%, 34% 65%, 51% 59%, 67% 59%, 80% 53%, 88% 50%, 99% 48%, 99% 48%, 97% 49%, 98% 98%);
+  }
+}
